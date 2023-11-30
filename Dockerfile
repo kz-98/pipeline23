@@ -1,7 +1,7 @@
-FROM openjdk:17-oraclelinux8
+FROM openjdk:8-jdk-oraclelinux8
 
 COPY target/*.jar spmvc.jar
 
-EXPOSE 8081
+EXPOSE 8083
 
-CMD ["java","-jar","spmvc.jar"]
+CMD ["java", "-jar", "spmvc.jar"]
